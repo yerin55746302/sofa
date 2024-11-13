@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    @import url("https://use.typekit.net/rmw3byf.css");
+
+
+    body, h1, h2, h3, p, ul, section, footer { margin: 0; padding: 0; overflow: hidden; }
+    body { background-color: black; }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 3.6vh;
+      width: 13.12vw;
+    }
+
+    .line {
+      margin-top: 1vh;
+      width: 100%;
+      height: 0.3vh;
+      background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(109,109,109,1) 50%, rgba(0,0,0,1) 100%);
+    }
+
+    .box {
+      margin-top: 4.6vh;
+      margin-left: 6vw;
+      width: 45.27vw;
+      height: 73.96vh;
+      border-radius: 20%;
+      background: rgb(218, 255, 95);
+      background: radial-gradient(circle at center 110%, rgba(218, 255, 95, 1) 0%, rgba(63, 63, 63, 1) 100%);
+      position: relative;
+      z-index: -2;
+    }
+  .title {
+  position: absolute;
+  top: 6.5vh;  /* 박스 위에서부터 63.2793px만큼 떨어짐 (63.2793px -> 6.5vh) */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.82vw;  /* 폰트 사이즈 35pt (35pt -> 약 1.82vw) */
+  font-family: "sofia-pro", sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+    .des{
+  position: absolute;
+  top: 51.5vh; /* 395.1924px -> 약 19.5vh */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.16vw;  /* 폰트 사이즈 19pt -> 약 1.16vw */
+  font-family: "sofia-pro", sans-serif;
+  color: #E5E5E5;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+  width: 30.64vw;  /* 텍스트의 최대 너비를 설정 */
+   word-break: keep-all;
+   line-height: 1.58;
+}
+
+    .box::after {
+      content: "Talk with sieon";
+      font-size: 0.99vw;
+      font-family: "sofia-pro", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      color: white;
+      background: rgb(148,177,60);
+      background: radial-gradient(circle at center top, rgba(148,177,60,1) 0%, rgba(63,63,63,1) 100%);
+      position: absolute;
+      bottom: -6.95vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 6.95vh;
+      width: 12.98vw;
+      border-bottom-left-radius: 1.2vw;  /* 하단 왼쪽 모서리 둥글게 */
+  border-bottom-right-radius: 1.2vw; /* 하단 오른쪽 모서리 둥글게 */}
+
+  .profile{
+    position: absolute;
+    top: 14.2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 19.5vw;
+    z-index: -1;
+  }
+
+
+  .fileb{
+  position: absolute;
+  top: 19.43vh; /* 화면 위에서 19.43vh만큼 떨어짐 */
+  right: 6vw;   /* 오른쪽에서 6vw만큼 떨어짐 */
+  width: 48.1vw;
+  z-index: 2;
+}
+
+  .graphb {
+  position: absolute;  /* fileb 내부에 위치시키기 위해 absolute로 설정 */
+  top: 26.41vh;     
+  width: 31.89vw;
+  z-index: 3;       
+}
+  </style>
+</head>
+<body>
+  <img src="logo.png" class="logo"> 
+  <div class="line"></div>
+
+  <img class="fileb" src="fileb.png">
+  
+
+  <div class="box">
+  <div class="title">Sieon Ahn</div>
+  <img class="profile" src="sieon.png">
+  <div class="des">
+    안시언 디자이너는 탁월한 분석력과 다양한 디자인 스타일을 자유롭게 활용하는 능력으로 UI/UX 디자인 분야에서 눈에 띄는 성과를 보여주는 디자이너입니다. 특히, 사람들을 아우르는 리더십과 깊이 있는 통찰력을 통해 프로젝트를 성공적으로 이끄는 중요한 인재입니다.
+  </div>
+</div>
+
+</body>
+</html>
